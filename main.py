@@ -1,6 +1,7 @@
 from pyinfra import host
 from pyinfra.operations import apt, files, init, server, ssh
 
+#Pyinfra script to create wireguard configurations for N nodes.
 # Define the hosts
 nodes = [host('node{}'.format(i)) for i in range(1, 11)]
 
